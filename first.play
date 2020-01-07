@@ -1,0 +1,10 @@
+---
+- name: first playbook
+  hosts: all
+  become: yes
+  
+  tasks: 
+    - name: first task
+      copy:
+        content: "this is first playbook"
+        dest: /home/new.txt
